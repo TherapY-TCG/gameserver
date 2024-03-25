@@ -1,7 +1,7 @@
 use actix_web::{get, App, HttpResponse, HttpServer, Responder};
-use serde::{Deserialize, Serialize};
+use serde::Serialize;
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Serialize)]
 struct ApiIndex {
     server_version: String,
 }
